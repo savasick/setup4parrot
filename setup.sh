@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-dir_name="tmp"
+dir_name="Tools"
 if [ ! -d "$dir_name" ]; then
   mkdir -p "$dir_name"
   if [ $? -ne 0 ]; then
@@ -136,3 +136,5 @@ else
 fi
 echo ""
 
+cd ..
+mv "$dir_name" $HOME
