@@ -55,6 +55,15 @@ else
 fi
 echo ""
 
+read -p "Do you want to download the TOR / TOR tools? (y/n) " -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo "Downloading TOR / TOR tools"
+  sudo apt install tor torsocks obfs4proxy torbrowser-launcher -y
+else
+  echo "Download TOR / TOR tools skiped"
+fi
+echo ""
 
 read -p "Do you want to download the Discord? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
