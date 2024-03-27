@@ -34,16 +34,6 @@ fi
 echo ""
 
 
-read -p "Do you want to download Joplin for notes? (y/n) " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-  echo "Downloading Joplin"
-  sudo apt install joplin -y
-else
-  echo "Download Joplin skiped"
-fi
-echo ""
-
 read -p "Do you want to download the VirtualBox? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
